@@ -1,7 +1,7 @@
 <?php
 
-  $country=$name=$address=$phnnum=$email="";
-  $count_err=$name_err=$add_err=$phn_err=$email_err="";
+  $country=$name=$address=$mobile=$email="";
+  $count_err=$name_err=$add_err=$mob_err=$email_err="";
   if ($_SERVER["REQUEST_METHOD"]=="POST"){
 
     if(empty($_POST["country"])){
@@ -28,12 +28,12 @@
       }
     }
 
-    if(empty($_POST["phnnum"])){
-      $phn_err="Mobile Number is required.";
+    if(empty($_POST["mobile"])){
+      $mob_err="Mobile Number is required.";
     }else{
-      $phnnum=input($_POST["phnnum"]);
-      if(!preg_match("/^[0-9]*$/",$phnnum)){
-        $phn_err="Only letters and blank spaces allowed.";
+      $mobile=input($_POST["mobile"]);
+      if(!preg_match("/^[0-9]*$/",$mobile)){
+        $mob_err="Only letters and blank spaces allowed.";
       }
     }
 
@@ -71,7 +71,18 @@
                     ('$country','$name','$address','$mobile,'$email')";
   mysqli_query($conn,$sql);
 
-  $msg=
+  $from=$email;
+  $subject="New query request";
+  $body="New Entry :\n
+          Country: $country\n
+          Name: $name\n
+          Address: $address\n
+          Phn. No. : $mobile\n
+          Email : $email";
+  $to="princepiyush2398@gmail.com";
+  $head="From : $from";
+
+  mail($to,$subject,$body,$head);
 
   function input($data){
     $data=trim($data);

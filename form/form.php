@@ -34,7 +34,7 @@
     <input type="text" name="address" value="<?php echo $address;?>">
     <br>
     Mobile Number :<br>
-    <input type="text" name="phnnum" value="<?php echo $phnnum;?>">
+    <input type="text" name="mobile" value="<?php echo $phnnum;?>">
     <br>
     Email Address :<br>
     <input type="email" name="email" value="<?php echo $email;?>">
