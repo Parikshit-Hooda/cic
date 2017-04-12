@@ -1,0 +1,4 @@
+-------------progress report-----------------
+1. created all the necessary pages
+2. created and completed contact form
+3. devloping prices, about, index
