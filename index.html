@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link rel="icon" type="image/png" href="heartfavicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="heartfavicon-16x16.png" sizes="16x16" />
+
+  <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <!--meta tags -->
+  <meta name="description" content="Move It Quick">
+  <meta name="keywords" content="mobility">
+  <meta name="author" content="Parikshit and PP">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+<title> Move It Quick🚛</title>
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<link href="css/slideshow-css.css" rel="stylesheet">
+<script type="text/javascript" src="js/slideshow-js.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
+
+
+
+
+
+
+<!--
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+-->
+
+<style>
+
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #0d47a1;
+}
+
+.carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  display: block;
+  height: 200px;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell img {
+    height: 400px;
+  }
+}
+.container{width:85%}
+
+.section{display:flex;
+justify-content:space-around;}
+
+.responsive-img{flex:1;
+}
+.content{flex:3;
+  margin-left:40px;
+}
+
+
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#heart {
+    animation: blink 1s;
+    animation-iteration-count: infinite;
+}
+
+
+
+</style>
+
+
+
+</head>
+
+
+<body>
+
+  <div class="container">
+
+  <div class="carousel">
+  <div class="carousel-cell">
+    <img src="media/house-tow-1.jpg" alt="house-tow" />
+  </div>
+  <div class="carousel-cell">
+    <img src="media/packers-movers-1.jpg" alt="packers-movers" />
+  </div>
+  <div class="carousel-cell">
+    <img src="media/trailers-1.jpg" alt="trailers" />
+  </div>
+  <div class="carousel-cell">
+    <img src="media/trucks-1.jpg" alt="trucks" />
+  </div>
+  <!--
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" />
+  </div>
+-->
+</div>
+
+
+<!--
+  <video width="1500" height="700">
+  <source src="front-page-video_1.mp4" loop="" type="video/mp4" />
+</video>
+-->
+<!--
+<img class="mySlides" src="packers-movers.jpg">
+<img class="mySlides" src="trucks.jpg">
+<img class="mySlides" src="house-tow.jpg">
+<img class="mySlides" src="trailers.jpg">
+-->
+<!--
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="media/packers-movers-1.jpg" style="">
+    <div class="text">Packers and Movers</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="media/trucks-1.jpg" style="">
+    <div class="text">Our  state-of-art Trucks</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="media/house-tow-1.jpg" style="">
+    <div class="text">house pick up and move</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="media/trailers-1.jpg" style="">
+    <div class="text">Our trucks</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>-->
+
+<div class="row">
+  <center><h2>Move It Quick Gets Press</h2></center>
+  <div class="section">
+    <img class="responsive-img" src="media/ABP1.png">
+    <div class="content">
+    <h4>Move It Quick makes it quick</h4>
+    <span class="datepub">10 August, 2010</span>
+    <p>Move It Quick has made it to the top of the ICSI list in its field.
+      <a>Read more</a>
+    </div>
+
+
+  </div>
+
+  <div class="section">
+    <img class="responsive-img" src="media/AAJTAK1.png">
+    <div class="content">
+    <h4>Unique in its own way:Move It Quick</h4>
+    <span class="datepub">20 December, 2010</span>
+    <p>moving things from pin to housings.
+      <a>Read more</a>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <img class="responsive-img" src="media/CNN.png">
+    <div class="content">
+    <h4>MIQ tops ISCI list again</h4>
+    <span class="datepub">25 July, 2011</span>
+    <p>Move It Quick has made it to the top of the ICSI list again for the second consecutive year.
+      <a>Read more</a>
+  </div>
+</div>
+
+
+
+  <div class="section">
+    <img class="responsive-img" src="media/FOXNEWS1.png">
+    <div class="content">
+    <h4>Global firm;Local roots</h4>
+    <span class="datepub">5 January, 2012</span>
+    <p>A firm which started as a small logistics company makes fortune..
+      <a>Read more</a>
+  </div>
+</div>
+
+
+  <div class="section">
+    <img class="responsive-img" src="media/INDIANEXPRESS1.png">
+    <div class="content">
+    <h4>MIQ generates record-breaking revenue</h4>
+    <span class="datepub">10 August, 2010</span>
+    <p>The annual revenue of Move It Quick crosses 10 crores.
+      <a>Read more</a>
+  </div>
+</div>
+
+
+
+
+
+  <div class="section">
+    <img class="responsive-img" src="media/TIMESNOW1.png">
+    <div class="content">
+    <h4>MIQ opens 5 new offices</h4>
+    <span class="datepub">6 September, 2015</span>
+    <p>The company today inaugrated 5 new offices across the country.</p>
+      <a>Read more</a>
+  </div>
+</div>
+
+
+  <div class="section">
+    <img class="responsive-img" src="media/TOI1.png">
+    <div class="content">
+    <h4>MIQ voted the best firm in its sector</h4>
+    <span class="datepub">19 May, 2016</span>
+    <p>Move It Quick has been voted the best firm by an independent survey.</p>
+      <a>Read more</a>
+  </div>
+</div>
+
+
+</div>
+</div>
+
+<footer class="blue-grey darken-4 center-align">
+  <a href="about-us.html" class="footer-a grey-text text-lighten-5">About Us</a>
+  <br>
+  <a href="prices.html" class="footer-a grey-text text-lighten-5">Prices</a>
+  <br>
+  <a href="careers.html" class="footer-a grey-text text-lighten-5">Careers</a>
+  <br>
+  <a href="contact-us.php" class="footer-a grey-text text-lighten-5">Contact Us</a>
+  <br>
+  <p class="grey-text text-lighten-5">Made with <img src="media/heartfavicon-16x16.png" id="heart" alt="♥"/> by Parikshit and Prince</p>
+    <a href="#"><i class="material-icons">arrow_upward</i></a>
+    <br>
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+$('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+
+</script>
+
+<script>
+var carousel = document.querySelector('.carousel');
+var flkty = new Flickity( carousel, {
+  imagesLoaded: true,
+  percentPosition: false,
+});
+
+var imgs = carousel.querySelectorAll('.carousel-cell img');
+// get transform property
+var docStyle = document.documentElement.style;
+var transformProp = typeof docStyle.transform == 'string' ?
+  'transform' : 'WebkitTransform';
+
+flkty.on( 'scroll', function() {
+  flkty.slides.forEach( function( slide, i ) {
+    var img = imgs[i];
+    var x = ( slide.target + flkty.x ) * -1/3;
+    img.style[ transformProp ] = 'translateX(' + x  + 'px)';
+  });
+});
+</script>
+
+<!--
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+-->
+
+
+
+</body>
+
+</html>
