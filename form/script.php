@@ -46,8 +46,20 @@
       }
     }
 
+    $from=$email;
+    $subject="New query request";
+    $body="New Entry :\n
+            Country: $country\n
+            Name: $name\n
+            Address: $address\n
+            Phn. No. : $mobile\n
+            Email : $email";
+    $to="princepiyush2398@gmail.com";
+    $head="From : $from";
 
+    mail($to,$subject,$body,$head);
   }
+
 
   $snm="localhost";
   $user="root";
@@ -68,25 +80,15 @@
   mysqli_query($conn,$sql);
 
   $sql="INSERT INTO data1 (country,name,address,mobile, email) VALUES
-                    ('$country','$name','$address','$mobile','$email' )" ; 
+                    ('$country','$name','$address','$mobile','$email' )" ;
   if(mysqli_query($conn,$sql)){
-    echo "\nYour query submitted successfully";
+    header("Location : index.html");
+    exit();
   }else{
     echo "\nerror : " .$conn->error;
   }
 
-  $from=$email;
-  $subject="New query request";
-  $body="New Entry :\n
-          Country: $country\n
-          Name: $name\n
-          Address: $address\n
-          Phn. No. : $mobile\n
-          Email : $email";
-  $to="princepiyush2398@gmail.com";
-  $head="From : $from";
 
-  mail($to,$subject,$body,$head);
 
   function input($data){
     $data=trim($data);
