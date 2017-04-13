@@ -6,41 +6,81 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <style>
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      #main {
+        flex: 1 0 auto;
+      }
+
+    </style>
+
 </head>
 <body>
-  <div class="container">
-      <div class="card-panel grey darken-3">
-      <center>  <h1 class="green-text text-lighten-5">CAREERS</h1></center>
-      </div>
-
+<header>
+      <div class="card-panel deep-orange accent-3">
+      <center>  <h1 class="white-text text-darken-2 flow-text">CAREERS</h1></center>
+    </div>
+       <h3 class="card-panel lime accent-4 white-text flow-text">  On this page , you can apply for jobs in our company! </h3>
+</header>
+<main class="container">
 
 <ul class="collapsible popout" data-collapsible="accordion">
 
       <li>
-        <div class="collapsible-header">
-          <h2>Drivers Required</h2>
+        <div class="collapsible-header card-panel	teal lighten-1">
+          <h3 class="white-text flow-text">Drivers Required</h2>
         </div>
-        <div class="collapsible-body">
-          <h5>Truck drivers required for transportation purpose. Must have ability to drive heavy vehicles.Fill the google form below to apply.</h5>
+        <div class="collapsible-body card-panel light-blue lighten-5">
+          <h5 class="grey-text text-darken-1 flow-text">Truck drivers required for transportation purpose. Must have ability to drive heavy vehicles.Fill the google form below to apply.</h5>
           <a href="google form">Apply Now </a>
         </div>
       </li>
 
       <li>
-      <div class="collapsible-header">  <h2>Helpers Required</h2></div>
-        <div class="collapsible-body"><h5>Helpers required for loading and packaging purposes. Must have ability to hold heavy weight .Fill the google form below to apply.</h5>
+        <div class="collapsible-header card-panel teal lighten-1">
+        <h3 class="white-text flow-text">Helpers Required</h2>
+      </div>
+        <div class="collapsible-body card-panel light-blue lighten-5">
+          <h5 class="grey-text text-darken-1 flow-text">Helpers required for loading and packaging purposes. Must have ability to hold heavy weight .Fill the google form below to apply.</h5>
           <a href="google form">Apply Now </a>
         </div>
       </li>
 
       <li>
-        <div class="collapsible-header"><h2>Office Staff Required</h2></div>
-        <div class="collapsible-body"><h5>Office staff required for office work. Must have knowledge of data entry and data manipulation.Fill the google form below to apply.</h5>
+        <div class="collapsible-header card-panel teal lighten-1">
+          <h3 class="white-text flow-text">Office Staff Required</h2>
+        </div>
+        <div class="collapsible-body card-panel light-blue lighten-5">
+          <h5 class="grey-text text-darken-1 flow-text">Office staff required for office work. Must have knowledge of data entry and data manipulation.Fill the google form below to apply.</h5>
         <a href="google form">Apply Now </a>
         </div>
       </li>
 </ul>
-</div>
+
+</main>
+
+<footer class="card-panel blue-grey darken-2 center-align">
+  <a href="about-us.html" class="footer-a grey-text text-lighten-5">About Us</a>
+  <br>
+  <a href="prices.html" class="footer-a grey-text text-lighten-5">Prices</a>
+  <br>
+  <a href="careers.html" class="footer-a grey-text text-lighten-5">Careers</a>
+  <br>
+  <a href="contact-us.php" class="footer-a grey-text text-lighten-5">Contact Us</a>
+  <br>
+  <p class="grey-text text-lighten-5">Made with <img src="media/heartfavicon-16x16.png" id="heart" alt="♥"/> by Parikshit and Prince</p>
+    <a href="#"><i class="material-icons">arrow_upward</i></a>
+    <br>
+
+
+</footer>
+
+
 
 </body>
 </html>
