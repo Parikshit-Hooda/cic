@@ -23,91 +23,21 @@
 <link href="css/slideshow-css.css" rel="stylesheet">
 <script type="text/javascript" src="js/slideshow-js.js"></script>
 <link href="css/front-page-css.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Gloria+Hallelujah|Merriweather" rel="stylesheet">
 
 
 
 
 
+<script type="text/javascript">
+$("button").onClick(function(){
+var divFirst = document.getElementById("#headline");
+divFirst.style.visibility = 'visible';
+divFirst.style.display = 'block';
+divFirst.tabIndex = "-1";
+divFirst.focus();});
 
-
-
-<!--
-<style>
-* {box-sizing:border-box}
-body {font-family: Verdana,sans-serif;}
-.mySlides {display:none}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-</style>
--->
-
-<style>
-
-</style>
+</script>
 
 
 
@@ -124,7 +54,10 @@ body {font-family: Verdana,sans-serif;}
   <source src="front-page-video.mp4" type="video/mp4">
   </video>
 </div>
---><div class="vidBG">
+<button type="button">Click Me!</button>
+-->
+<button type="button" class="triggerbtn"><i class="material-icons">arrow_downward</i>Keep Scrolling<i class="material-icons">arrow_downward</i></button>
+<div class="vidBG">
 
   <video autoplay poster="media/front-page-video.jpg" loop muted>
   <source src="front-page-video.mp4" type="video/mp4">
@@ -176,7 +109,7 @@ body {font-family: Verdana,sans-serif;}
 <div class="container">
 <div class="row">
 <img src="media/features.png" class="col s5 m3 l3" alt="features of Move It Quick">
-<div class="writ">
+<div class="writ" class="col offset-s7">
 <h4 class="overview">Our Features</h4>
 <p class="overview-biggest">Yeah! That's right. </p>
 </div>
@@ -289,6 +222,7 @@ body {font-family: Verdana,sans-serif;}
 </div>
 <div class="footer1">
 <footer class="blue-grey darken-4 center-align">
+  <br>
   <a href="about-us.html" class="footer-a grey-text text-lighten-5">About Us</a>
   <br>
   <a href="prices.html" class="footer-a grey-text text-lighten-5">Prices</a>
@@ -300,7 +234,16 @@ body {font-family: Verdana,sans-serif;}
   <p class="grey-text text-lighten-5">Made with <img src="media/heartfavicon-16x16.png" id="heart" alt="♥"/> by Parikshit and Prince</p>
     <a href="#"><i class="material-icons">arrow_upward</i></a>
     <br>
-
+<!--
+<img src="nucleo-social-icons/svg/social-1_logo-facebook.svg" class="footicon" alt="fb-icon"/>
+<img src="nucleo-social-icons/svg/social-1_logo-github.svg" class="footicon" alt="github-icon"/>
+<img src="nucleo-social-icons/svg/social-1_logo-linkedin.svg" class="footicon" alt="linkedin-icon"/>
+<img src="nucleo-social-icons/svg/social-1_logo-twitter.svg" class="footicon" alt="twitter-icon"/>
+-->
+<a href="#"><img src="media/github-logo.png" class="footicon" alt="github-logo"/></a>
+<a href="#"><img src="media/facebook.png" class="footicon" alt="fb-logo"/></a>
+<a href="#"><img src="media/linkedin-button.png" class="footicon" alt="linkedin-logo"/></a>
+<a href="#"><img src="media/twitter.png" class="footicon" alt="twitter-logo"/></a>
 
 </footer>
 </div>
