@@ -22,12 +22,38 @@
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 <link href="css/slideshow-css.css" rel="stylesheet">
 <script type="text/javascript" src="js/slideshow-js.js"></script>
+
+<style>
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#heart {
+    animation: blink 1s;
+    animation-iteration-count: infinite;
+}
+
+
+</style>
+
+
 </head>
 
 <body>
 
   <div class="container">
-    <div class="card">
+
+<h2>House Towers for every need</h2>
+
+
+    <div class="card hoverable">
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="media/price-house-tow.jpg">
         </div>
@@ -42,9 +68,9 @@
         </div>
       </div>
 
-      
 
-        <div class="card">
+
+        <div class="card hoverable">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="media/price-medium-house-tow.jpg">
             </div>
@@ -59,7 +85,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card hoverable">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="media/price-big-tow.jpg">
               </div>
@@ -73,7 +99,109 @@
 
               </div>
             </div>
-</div>
+
+            <!--trucks
+
+            -->
+
+<h2>Trucks for every need!</h2>
+
+              <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="media/price-small-truck.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Small Truck<i class="material-icons right">arrow_upward</i></span>
+                    <p><a href="#">ClickLink</a> <a href="#">ClickLink</a></p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Small Truck<i class="material-icons right">close</i></span>
+                    <p>500$<br>The price is fixed as the whole truck has to travel anyways.</p>
+
+                  </div>
+                </div>
+
+                <div class="card hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="media/price-medium-truck.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Medium Truck<i class="material-icons right">arrow_upward</i></span>
+                      <p><a href="#">ClickLink</a> <a href="#">ClickLink</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Medium Truck<i class="material-icons right">close</i></span>
+                      <p>400$<br>The price is fixed as the whole truck has to travel anyways.</p>
+
+                    </div>
+                  </div>
+
+                  <div class="card hoverable">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="media/price-large-truck.jpg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Large Truck<i class="material-icons right">arrow_upward</i></span>
+                        <p><a href="#">ClickLink</a> <a href="#">ClickLink</a></p>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Large Truck<i class="material-icons right">close</i></span>
+                        <p>200$<br>The price is fixed as the whole truck has to travel anyways.</p>
+
+                      </div>
+                    </div>
+
+<h2>Overseas Shipping</h2>
+
+<div class="card hoverable">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="media/price-ship-container.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Ship Container<i class="material-icons right">arrow_upward</i></span>
+      <p><a href="#">ClickLink</a> <a href="#">ClickLink</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Ship Container<i class="material-icons right">close</i></span>
+      <p>$1,900-$23,000.<br>The price depends on the load of the container.</p>
+
+    </div>
+  </div>
+
+  <div class="card hoverable">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="media/price-aircraft-shipping.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Aircraft Container<i class="material-icons right">arrow_upward</i></span>
+        <p><a href="#">ClickLink</a> <a href="#">ClickLink</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Aircraft Container<i class="material-icons right">close</i></span>
+        <p>height:20ft $1500<br>height:40ft $1800<br>The price depends on the load of the container.</p>
+
+      </div>
+    </div>
+  </div>
+
+    <footer class="blue-grey darken-4 center-align">
+      <a href="about-us.html" class="footer-a grey-text text-lighten-5">About Us</a>
+      <br>
+      <a href="prices.html" class="footer-a grey-text text-lighten-5">Prices</a>
+      <br>
+      <a href="careers.html" class="footer-a grey-text text-lighten-5">Careers</a>
+      <br>
+      <a href="contact-us.php" class="footer-a grey-text text-lighten-5">Contact Us</a>
+      <br>
+      <p class="grey-text text-lighten-5">Made with <img src="media/heartfavicon-16x16.png" id="heart" alt="♥"/> by Parikshit and Prince</p>
+        <a href="#"><i class="material-icons">arrow_upward</i></a>
+        <br>
+
+
+    </footer>
+
+
+
 
 </body>
 

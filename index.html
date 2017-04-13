@@ -23,8 +23,7 @@
 <link href="css/slideshow-css.css" rel="stylesheet">
 <script type="text/javascript" src="js/slideshow-js.js"></script>
 
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
+
 
 
 
@@ -131,7 +130,6 @@ body { font-family: sans-serif; }
     height: 400px;
   }
 }
-.container{width:85%}
 
 .section{display:flex;
 justify-content:space-around;}
@@ -160,6 +158,11 @@ justify-content:space-around;}
     animation-iteration-count: infinite;
 }
 
+  .parallax-container {
+  height: 400px;
+}
+
+
 
 
 </style>
@@ -171,84 +174,87 @@ justify-content:space-around;}
 
 <body>
 
-  <div class="container">
+<!-- landing frame-->
+<div class="carousel carousel-slider center" data-indicators="true">
+    <div class="carousel-fixed-item center">
+      <a class="btn waves-effect orange-text"><i class="material-icons">arrow_downward</i></a>
+    </div>
+    <div class="carousel-item red white-text" href="#one!">
+      <h2>First Panel</h2>
+      <p class="white-text">This is your first panel</p>
+    </div>
+    <div class="carousel-item amber white-text" href="#two!">
+      <h2>Second Panel</h2>
+      <p class="white-text">This is your second panel</p>
+    </div>
+    <div class="carousel-item green white-text" href="#three!">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your third panel</p>
+    </div>
+    <div class="carousel-item blue white-text" href="#four!">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your fourth panel</p>
+    </div>
+  </div>
 
-  <div class="carousel">
-  <div class="carousel-cell">
-    <img src="media/house-tow-1.jpg" alt="house-tow" />
-  </div>
-  <div class="carousel-cell">
-    <img src="media/packers-movers-1.jpg" alt="packers-movers" />
-  </div>
-  <div class="carousel-cell">
-    <img src="media/trailers-1.jpg" alt="trailers" />
-  </div>
-  <div class="carousel-cell">
-    <img src="media/trucks-1.jpg" alt="trucks" />
-  </div>
-  <!--
-  <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
-  </div>
-  <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
-  </div>
-  <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" />
-  </div>
--->
+
+<!--landing fram ends-->
+
+<div class="parallax-container">
+  <div class="parallax"><img src="media/parallax-1.jpg"></div>
+</div>
+<div class="container">
+<div class="row">
+<img src="media/biggest-in-our-game.jpg" class="col s5 m3 l3" alt="biggest in our game">
+<div class="writ">
+<h4 class="overview">Biggest In Our Game</h4>
+<p class="overview-biggest">Yeah! That's right. </p>
+</div>
+</div>
 </div>
 
 
-<!--
-  <video width="1500" height="700">
-  <source src="front-page-video_1.mp4" loop="" type="video/mp4" />
-</video>
--->
-<!--
-<img class="mySlides" src="packers-movers.jpg">
-<img class="mySlides" src="trucks.jpg">
-<img class="mySlides" src="house-tow.jpg">
-<img class="mySlides" src="trailers.jpg">
--->
-<!--
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 4</div>
-    <img src="media/packers-movers-1.jpg" style="">
-    <div class="text">Packers and Movers</div>
-  </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 4</div>
-    <img src="media/trucks-1.jpg" style="">
-    <div class="text">Our  state-of-art Trucks</div>
-  </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 4</div>
-    <img src="media/house-tow-1.jpg" style="">
-    <div class="text">house pick up and move</div>
-  </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 4</div>
-    <img src="media/trailers-1.jpg" style="">
-    <div class="text">Our trucks</div>
-  </div>
 
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+<div class="parallax-container">
+  <div class="parallax"><img src="media/parallax-2.jpg"></div>
 </div>
-<br>
+<div class="container">
+<div class="row">
+<img src="media/lowest-price-guaranteed.jpg" class="col s5 m3 l3" alt="lowest price guaranteed">
+<div class="writ">
+<h4 class="overview">Lowest Price Guaranteed</h4>
+<p class="overview-biggest">Yeah! That's right. </p>
+</div>
+</div>
+</div>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-</div>-->
 
+<div class="parallax-container">
+  <div class="parallax"><img src="media/parallax-3.jpg"></div>
+</div>
+<div class="container">
+<div class="row">
+<img src="media/features.png" class="col s5 m3 l3" alt="features of Move It Quick">
+<div class="writ">
+<h4 class="overview">Our Features</h4>
+<p class="overview-biggest">Yeah! That's right. </p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="container">
 <div class="row">
   <center><h2>Move It Quick Gets Press</h2></center>
   <div class="section">
@@ -390,11 +396,11 @@ justify-content:space-around;}
 
 
 
-<script>
-$('.main-carousel').flickity({
-  // options
-  cellAlign: 'left',
-  contain: true
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.parallax').parallax();
+   $('.carousel.carousel-slider').carousel({fullWidth: true});
 });
 
 </script>
