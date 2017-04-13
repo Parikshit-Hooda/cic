@@ -107,30 +107,6 @@ body {font-family: Verdana,sans-serif;}
 <style>
 
 
-* { box-sizing: border-box; }
-
-body { font-family: sans-serif; }
-
-.carousel {
-  background: #0d47a1;
-}
-
-.carousel-cell {
-  margin-right: 20px;
-  overflow: hidden;
-}
-
-.carousel-cell img {
-  display: block;
-  height: 200px;
-}
-
-@media screen and ( min-width: 768px ) {
-  .carousel-cell img {
-    height: 400px;
-  }
-}
-
 .section{display:flex;
 justify-content:space-around;}
 
@@ -165,6 +141,66 @@ justify-content:space-around;}
 
 
 
+/*-- reset --*/
+*, *:after, *:before {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+html {
+  font-size:62.75%;
+  font-family: Merriweather, Lato, sans-serif;
+}
+body {
+  font-size:1.6rem;
+  color: #333;
+}
+
+/*-- Setting the bg video --*/
+video {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('media/front-page-video.png') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+/*-- Login, Sign up display --*/
+div.tab {
+  display:inline-block;
+  width:45%;
+  transition: all ease .3s;
+  padding:2rem;
+  margin-bottom: 2rem;
+}
+div.tab h3{
+  margin:0;
+}
+
+
+
+.parallax-container{position:relative;
+top:1000px;}
+.container{position:relative;
+top:1000px;}
+
+
+#headline
+{position:relative;
+top:900px;}
+
+.footer1{position:relative;
+top:1100px;}
+.container{margin-up:100px;}
+
+
 </style>
 
 
@@ -174,32 +210,26 @@ justify-content:space-around;}
 
 <body>
 
-<!-- landing frame-->
-<div class="carousel carousel-slider center" data-indicators="true">
-    <div class="carousel-fixed-item center">
-      <a class="btn waves-effect orange-text"><i class="material-icons">arrow_downward</i></a>
-    </div>
-    <div class="carousel-item red white-text" href="#one!">
-      <h2>First Panel</h2>
-      <p class="white-text">This is your first panel</p>
-    </div>
-    <div class="carousel-item amber white-text" href="#two!">
-      <h2>Second Panel</h2>
-      <p class="white-text">This is your second panel</p>
-    </div>
-    <div class="carousel-item green white-text" href="#three!">
-      <h2>Third Panel</h2>
-      <p class="white-text">This is your third panel</p>
-    </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <h2>Fourth Panel</h2>
-      <p class="white-text">This is your fourth panel</p>
-    </div>
-  </div>
+<header>
+  <!--
+<div class="vidBG">
 
+  <video autoplay poster="media/front-page-video.jpg" loop muted>
+  <source src="front-page-video.mp4" type="video/mp4">
+  </video>
+</div>
+--><div class="vidBG">
 
-<!--landing fram ends-->
+  <video autoplay poster="media/front-page-video.jpg" loop muted>
+  <source src="front-page-video.mp4" type="video/mp4">
+  </video>
+</div>
 
+</header>
+
+<main>
+
+<center><h1 id="headline">Move It Quick</h1></center>
 <div class="parallax-container">
   <div class="parallax"><img src="media/parallax-1.jpg"></div>
 </div>
@@ -253,15 +283,19 @@ justify-content:space-around;}
 
 
 
+<br>
+
+<br>
+<br>
 
 <div class="container">
 <div class="row">
   <center><h2>Move It Quick Gets Press</h2></center>
   <div class="section">
-    <img class="responsive-img" src="media/ABP1.png">
+    <img class="responsive-img" src="media/ABP12.png">
     <div class="content">
     <h4>Move It Quick makes it quick</h4>
-    <span class="datepub">10 August, 2010</span>
+    <span class="datepub pink-text text-darken-3">10 August, 2010</span>
     <p>Move It Quick has made it to the top of the ICSI list in its field.
       <a>Read more</a>
     </div>
@@ -270,10 +304,10 @@ justify-content:space-around;}
   </div>
 
   <div class="section">
-    <img class="responsive-img" src="media/AAJTAK1.png">
+    <img class="responsive-img" src="media/AAJTAK12.png">
     <div class="content">
     <h4>Unique in its own way:Move It Quick</h4>
-    <span class="datepub">20 December, 2010</span>
+    <span class="datepub pink-text text-darken-3">20 December, 2010</span>
     <p>moving things from pin to housings.
       <a>Read more</a>
     </div>
@@ -281,10 +315,10 @@ justify-content:space-around;}
 
 
   <div class="section">
-    <img class="responsive-img" src="media/CNN.png">
+    <img class="responsive-img" src="media/CNN12.png">
     <div class="content">
     <h4>MIQ tops ISCI list again</h4>
-    <span class="datepub">25 July, 2011</span>
+    <span class="datepub pink-text text-darken-3">25 July, 2011</span>
     <p>Move It Quick has made it to the top of the ICSI list again for the second consecutive year.
       <a>Read more</a>
   </div>
@@ -293,10 +327,10 @@ justify-content:space-around;}
 
 
   <div class="section">
-    <img class="responsive-img" src="media/FOXNEWS1.png">
+    <img class="responsive-img" src="media/FOXNEWS12.png">
     <div class="content">
     <h4>Global firm;Local roots</h4>
-    <span class="datepub">5 January, 2012</span>
+    <span class="datepub pink-text text-darken-3">5 January, 2012</span>
     <p>A firm which started as a small logistics company makes fortune..
       <a>Read more</a>
   </div>
@@ -304,10 +338,10 @@ justify-content:space-around;}
 
 
   <div class="section">
-    <img class="responsive-img" src="media/INDIANEXPRESS1.png">
+    <img class="responsive-img" src="media/INDIANEXPRESS12.png">
     <div class="content">
     <h4>MIQ generates record-breaking revenue</h4>
-    <span class="datepub">10 August, 2010</span>
+    <span class="datepub pink-text text-darken-3">10 August, 2010</span>
     <p>The annual revenue of Move It Quick crosses 10 crores.
       <a>Read more</a>
   </div>
@@ -318,10 +352,10 @@ justify-content:space-around;}
 
 
   <div class="section">
-    <img class="responsive-img" src="media/TIMESNOW1.png">
+    <img class="responsive-img" src="media/TIMESNOW12.png">
     <div class="content">
     <h4>MIQ opens 5 new offices</h4>
-    <span class="datepub">6 September, 2015</span>
+    <span class="datepub pink-text text-darken-3">6 September, 2015</span>
     <p>The company today inaugrated 5 new offices across the country.</p>
       <a>Read more</a>
   </div>
@@ -329,10 +363,10 @@ justify-content:space-around;}
 
 
   <div class="section">
-    <img class="responsive-img" src="media/TOI1.png">
+    <img class="responsive-img" src="media/TOI12.png">
     <div class="content">
     <h4>MIQ voted the best firm in its sector</h4>
-    <span class="datepub">19 May, 2016</span>
+    <span class="datepub pink-text text-darken-3">19 May, 2016</span>
     <p>Move It Quick has been voted the best firm by an independent survey.</p>
       <a>Read more</a>
   </div>
@@ -340,8 +374,14 @@ justify-content:space-around;}
 
 
 </div>
-</div>
 
+
+
+
+
+</main>
+</div>
+<div class="footer1">
 <footer class="blue-grey darken-4 center-align">
   <a href="about-us.html" class="footer-a grey-text text-lighten-5">About Us</a>
   <br>
@@ -357,40 +397,7 @@ justify-content:space-around;}
 
 
 </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
 
 
@@ -400,56 +407,11 @@ justify-content:space-around;}
 <script type="text/javascript">
 $(document).ready(function(){
   $('.parallax').parallax();
-   $('.carousel.carousel-slider').carousel({fullWidth: true});
 });
 
 </script>
 
-<script>
-var carousel = document.querySelector('.carousel');
-var flkty = new Flickity( carousel, {
-  imagesLoaded: true,
-  percentPosition: false,
-});
 
-var imgs = carousel.querySelectorAll('.carousel-cell img');
-// get transform property
-var docStyle = document.documentElement.style;
-var transformProp = typeof docStyle.transform == 'string' ?
-  'transform' : 'WebkitTransform';
-
-flkty.on( 'scroll', function() {
-  flkty.slides.forEach( function( slide, i ) {
-    var img = imgs[i];
-    var x = ( slide.target + flkty.x ) * -1/3;
-    img.style[ transformProp ] = 'translateX(' + x  + 'px)';
-  });
-});
-</script>
-
-<!--
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
--->
 
 
 
