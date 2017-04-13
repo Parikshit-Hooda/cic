@@ -99,6 +99,11 @@
     <p class="grey-text text-lighten-5">Made with <img src="media/heartfavicon-16x16.png" id="heart" alt="♥"/> by Parikshit and Prince</p>
       <a href="#"><i class="material-icons">arrow_upward</i></a>
       <br>
+      <a href="#"><img src="media/github-logo.png" class="footicon" alt="github-logo"/></a>
+      <a href="#"><img src="media/facebook.png" class="footicon" alt="fb-logo"/></a>
+      <a href="#"><img src="media/linkedin-button.png" class="footicon" alt="linkedin-logo"/></a>
+      <a href="#"><img src="media/twitter.png" class="footicon" alt="twitter-logo"/></a>
+    </footer>
       <script>
         $(document).ready(function() {
             $('select').material_select();

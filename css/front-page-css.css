@@ -22,7 +22,7 @@ justify-content:space-around;}
         opacity: 1;
     }
 }
-#heart {
+#heart, .material-icons {
     animation: blink 1s;
     animation-iteration-count: infinite;
 }
@@ -87,8 +87,25 @@ top:1000px;}
 
 #headline
 {position:relative;
-top:900px;}
+top:900px;
+font-family: 'Bree Serif', serif;}
 
 .footer1{position:relative;
 top:1100px;}
 .container{margin-up:100px;}
+.overview{font-family: 'Bree Serif', serif;}
+h2{font-family: 'Bree Serif', serif;}
+.overview-biggest{font-family: 'Gloria Hallelujah', cursive;}
+.footer1{font-family: 'Merriweather', serif;}
+.content{margin-left:30px;}
+.overview, .overview-biggest {margin-left:40px;}
+
+button{position:absolute;
+top:400px;
+left:320px;
+opacity:1;
+width:700px;
+height:90px;
+font-size:60px;
+border-radius:50px;
+}
