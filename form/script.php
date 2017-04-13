@@ -55,11 +55,11 @@
 
   $conn=new mysqli($snm,$user,$pass);
 
-  $sql="CREATE DATABASE IF NOT EXISTS db";
+  $sql="CREATE DATABASE IF NOT EXISTS db1";
   mysqli_query($conn,$sql);
-  $sql="USE db";
+  $sql="USE db1";
   mysqli_query($conn,$sql);
-  $sql="CREATE TABLE data (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  $sql="CREATE TABLE IF NOT EXISTS data1 (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                           country VARCHAR(50) NOT NULL,
                           name VARCHAR(50) NOT NULL,
                           address VARCHAR(100) NOT NULL ,
@@ -67,9 +67,13 @@
                           email VARCHAR(50) NOT NULL   )";
   mysqli_query($conn,$sql);
 
-  $sql="INSERT INTO data(country,name,address,mobile, email) VALUES
-                    ('$country','$name','$address','$mobile,'$email')";
-  mysqli_query($conn,$sql);
+  $sql="INSERT INTO data1 (country,name,address,mobile, email) VALUES
+                    ('$country','$name','$address','$mobile','$email' )" ; 
+  if(mysqli_query($conn,$sql)){
+    echo "\nYour query submitted successfully";
+  }else{
+    echo "\nerror : " .$conn->error;
+  }
 
   $from=$email;
   $subject="New query request";
@@ -91,4 +95,5 @@
     return $data;
   }
 
+   exit(0);
 ?>
