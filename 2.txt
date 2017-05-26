@@ -1,4 +1,0 @@
---project progress------
-completed contact-us form
-completed index.html
-developing others.
